@@ -1,0 +1,305 @@
+@import 'utilities.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body{
+    height: 8000px;
+    font-family: 'Poppins' ,sans-serif;
+}
+header{
+    background-color: black;
+    
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header nav .left a{
+    color:white;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+header nav .left a:hover{
+    color: turquoise;
+}
+header nav{
+    padding:2rem 0;
+}
+.profile .left img{
+    width:600px;
+    height: 600px;
+     
+}
+.profile .right{
+    color: white;
+}
+.profile .right h6{
+    text-align: center;
+    font-size: 1.6rem;
+    color:turquoise;
+    margin-bottom: 0.5rem;
+}
+.profile .right h1{
+    text-align: right;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2em;
+    margin-bottom: 2rem;
+}
+.profile .right h1 span{
+    color:turquoise;
+}
+.profile .right p{
+    text-align: right;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.justify-center{
+    justify-content: center;
+}
+.profile .right{
+    margin-top: -7rem;
+}
+section{
+    padding: 6rem 0;
+}
+section.about .about-me-img{
+    height:450px;
+    width: 500px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color:turquoise;
+
+}
+section.about h3{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about p{
+    font-family: 'lato', sans-serif;
+    color:rgb(153, 156, 156);
+    line-height: 1.9;
+}
+
+.section-heading span{
+    color:turquoise;
+}
+.section-heading{
+    color:#070606;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading + p{
+    color:rgb(151, 156, 156);
+    font-family:'lato',sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+section.services{
+    background:rgb(220, 223, 221);
+}
+
+section.services .card-wrapper{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+section.services .card-wrapper .card{
+    background:white;
+    padding: 3rem 2rem;
+    position:relative;
+    padding-top:3rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+section.sevices .card-wrapper .card img{
+    position:absolute;
+    top:-3.5rem;
+    left:50%;
+    transform:translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+section.services .card-wrapper .card h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card p{
+    font-family:'lato',sans-serif;
+    color:rgb(145, 156, 156);
+    line-height:1.6;
+}
+section.services .card-wrapper .card:hover{
+    background:black;
+}
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p {
+    color:white;
+}
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./camera.png);
+    color:white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,77% 70%,0 100%);
+    padding-bottom: 30rem;
+}
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+
+}
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'lato',sans-serif;
+}
+section.reviews .slider .slide img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    object-fit:cover;
+    margin-bottom:2rem;
+}
+section.reviews .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0 4rem;
+}
+section.reviews .slider .slide p{
+    font-family:'lato',sans-serif;
+    color:rgb(160, 158, 158);
+    margin-bottom: 1rem;
+}
+section.reviews .slider .slide span{
+    font-size: 0.8rem;
+}
+section.reviews .slider-dots .dots{
+    list-style-type:none;
+    display: flex!important;
+    justify-content: center;
+}
+section.reviews .slider-dots{
+    margin-top:3rem;
+}
+section.reviews .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right:0.3rem;
+    border:none;
+    outline: none;
+    background: rgb(156, 152, 152);
+    border-radius: 50px;
+    cursor: pointer;
+}
+section.review .dots li.slick-active button{
+    background:rgb(96, 218, 248);
+    width:20px;
+}
+section.blog{
+    background:black;
+}
+section.blog .section-heading{
+    color:white;
+}
+section.blog .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:3rem;
+}
+section.blog .card-wrapper .card{
+    background:white;
+}
+section.blog .card-wrapper .card .img-wrapper img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+section.blog .card-wrapper .card .card-content{
+    padding:1rem;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+section.blog .card-wrapper .card .card-content a{
+    color: black;
+    text-decoration: none;
+}
+section.blog .card-wrapper .card .card-content a:hover{
+    color:turquoise;
+}
+section.blog .card-wrapper .card .card-content span{
+    color:rgb(151, 156, 156);
+    font-size: 0.8rem;
+}
+section.blog .card-wrapper .card .card-content p{
+    font-family:'lato',sans-serif;
+    color:rgb(151, 156, 156);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+section.blog .card-wrapper .card .card-container a.read-more{
+    font-size:0.8rem;
+}
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card img{
+    margin-bottom: 3rem;;
+}
+section.contact .card-wrapper .card h1{
+    font-weight:400;
+    margin-bottom: 0.7rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size:1rem;
+    color:dimgrey;
+    font-weight: 400;
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:2rem;
+    margin-bottom: 2rems;
+}
+section.contact .input-wrap2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact .input-wrap2 input{
+    margin: 2rem;
+}
+section.contact input{
+    padding: 0.5rem;
+}
+section.contact .input-wrap2 textarea{
+    padding: 0.5rem;
+}
